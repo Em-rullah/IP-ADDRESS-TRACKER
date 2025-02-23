@@ -41,11 +41,7 @@ function App() {
         }}
       >
         <Header />
-        {coords.status === "fail" ? (
-          <StyledError>Wrong ip/domain</StyledError>
-        ) : (
-          <Map />
-        )}
+        {!coords.countryName ? <StyledError>Wrong IP</StyledError> : <Map />}
       </CoordsContext.Provider>
     </Container>
   );

@@ -3,8 +3,10 @@ import styled from "styled-components";
 
 const LiStyled = styled.li`
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 1.2rem;
+  padding-right: 1.2rem;
 
   &:not(:last-child) {
     border-right: 1px solid #a3a3a3;

@@ -14,6 +14,10 @@ const H1Styled = styled.h1`
   color: #fafafa;
   font-size: 4.8rem;
   font-weight: 500;
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
 `;
 
 function Header() {

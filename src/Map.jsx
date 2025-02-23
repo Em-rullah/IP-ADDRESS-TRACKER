@@ -11,7 +11,7 @@ function SetView({ coords }) {
   const map = useMap();
 
   useEffect(() => {
-    map.setView([coords.lat, coords.lon]);
+    map.setView([coords.latitude, coords.longitude]);
   }, [coords, map]);
 
   return null;
@@ -19,10 +19,10 @@ function SetView({ coords }) {
 
 function Map() {
   const { coords } = useContext(CoordsContext);
-
+  console.log(coords);
   return (
     <StyledMap
-      center={[coords.lat, coords.lon]}
+      center={[coords.latitude, coords.longitude]}
       zoom={13}
       scrollWheelZoom={false}
     >
@@ -30,7 +30,7 @@ function Map() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[coords.lat, coords.lon]} />
+      <Marker position={[coords.latitude, coords.longitude]} />
       <SetView coords={coords} />
     </StyledMap>
   );

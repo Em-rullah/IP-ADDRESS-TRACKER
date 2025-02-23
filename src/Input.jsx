@@ -30,7 +30,17 @@ const ButtonStyled = styled.button`
 `;
 
 const ImgStyled = styled.img`
-  scale: 1.5;
+  scale: 2.5;
+
+  @media (max-width: 990px) {
+    scale: 2;
+  }
+  @media (max-width: 750px) {
+    scale: 1.5;
+  }
+  @media (max-width: 600px) {
+    scale: 1;
+  }
 `;
 
 function Input() {
@@ -50,7 +60,7 @@ function Input() {
       <InputStyled
         onChange={(e) => setValue(e.target.value)}
         value={value}
-        placeholder="Search for any IP address or domain"
+        placeholder="Search for any IP address"
         type="text"
       />
       <ButtonStyled>
