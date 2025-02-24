@@ -7,7 +7,12 @@ const FormStyled = styled.form`
   width: 64rem;
   height: 6rem;
   display: flex;
+  justify-content: center;
   margin-bottom: 2.4rem;
+
+  @media (max-width: 660px) {
+    width: 100%;
+  }
 `;
 
 const InputStyled = styled.input`
@@ -17,6 +22,10 @@ const InputStyled = styled.input`
   border: none;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
+
+  @media (max-width: 660px) {
+    width: 85%;
+  }
 `;
 
 const ButtonStyled = styled.button`
@@ -27,20 +36,14 @@ const ButtonStyled = styled.button`
   border-bottom-right-radius: 1rem;
   cursor: pointer;
   transition: all 300ms;
+
+  @media (max-width: 660px) {
+    width: 15%;
+  }
 `;
 
 const ImgStyled = styled.img`
   scale: 2.5;
-
-  @media (max-width: 990px) {
-    scale: 2;
-  }
-  @media (max-width: 750px) {
-    scale: 1.5;
-  }
-  @media (max-width: 600px) {
-    scale: 1;
-  }
 `;
 
 function Input() {

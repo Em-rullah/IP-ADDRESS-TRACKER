@@ -4,8 +4,6 @@ import { useContext } from "react";
 import { CoordsContext } from "./App";
 
 const UlStyled = styled.ul`
-  position: absolute;
-  top: 25%;
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -14,6 +12,7 @@ const UlStyled = styled.ul`
   background-color: #fafafa;
   padding: 2.4rem 2.4rem;
   border-radius: 1rem;
+  width: 90%;
 `;
 
 function Info() {

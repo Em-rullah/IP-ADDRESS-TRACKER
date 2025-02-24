@@ -16,12 +16,22 @@ const H2Styled = styled.h2`
   color: #404040;
   font-size: 1.4rem;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+
+  @media (max-width: 660px) {
+    width: 80%;
+    font-size: 1.2rem;
+  }
 `;
 const PStyled = styled.p`
   word-break: break-all;
   font-size: 2.8rem;
   font-weight: 500;
+
+  @media (max-width: 660px) {
+    width: 80%;
+    font-size: 1.8rem;
+  }
 `;
 
 function InfoItem({ caption, content }) {

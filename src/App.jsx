@@ -9,7 +9,7 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-rows: 30% 70%;
+  grid-template-rows: 40% 60%;
 `;
 
 const StyledError = styled.div`
